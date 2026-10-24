@@ -1,0 +1,22 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Sophia AI Assistant",
+            "type": "process",
+            "command": "C:\\Users\\ASUS TUF\\Desktop\\Sophia\\envSophia\\Scripts\\python.exe",
+            "args": [
+                "C:\\Users\\ASUS TUF\\Desktop\\Sophia\\main.py"
+            ],
+            "options": {
+                "cwd": "C:\\Users\\ASUS TUF\\Desktop\\Sophia"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
