@@ -1,12 +1,12 @@
 
+import os
 import eel
+from engine.features import *
 
 eel.init('www')
 
-eel.start(
-    'index.html',
-    mode='chrome',
-    host='localhost',
-    port=8000,
-    block=True
-)
+playAssistantSound()
+
+os.system('start chrome.exe --app="http://localhost:8000/index.html"')
+
+eel.start('index.html', mode=None, host='localhost', block=True)
