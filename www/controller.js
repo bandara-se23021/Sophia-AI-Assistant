@@ -3,15 +3,18 @@ $(document).ready(function() {
   // Display Speak Message
   eel.expose(DisplayMessage) 
   function DisplayMessage(message) {
-   $(".siri-message li:first").text(message);
-   $(".siri-message").textillate('start');
+   $(".siri-message").text(message);
+   $("#assistant-status").text(message);
+   if ($.fn.textillate) {
+    $(".siri-message").textillate('start');
+   }
   }
 
   //Display hood
   eel.expose(ShowHood)
   function ShowHood() {
-    $("#Oval").attr("hidden", false);
-    $("#SiriWave").attr("hidden", true);
+    $("#Oval").prop("hidden", false);
+    $("#SiriWave").prop("hidden", true);
   }
 
   });
